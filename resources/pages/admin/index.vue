@@ -9,11 +9,11 @@
       md6>
       <div class="text-xs-center">
         <logo/>
-        <vuetify-logo/>
       </div>
       <v-card>
         <v-card-title class="headline">Welcome to the Vuetify + Nuxt.js template</v-card-title>
         <v-card-text>
+          <h1>{{ $store.state.count }}</h1>
           <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
           <p>For more information on Vuetify, check out the <a
             href="https://vuetifyjs.com"
@@ -54,13 +54,11 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
   layout: 'admin',
   components: {
-    Logo,
-    VuetifyLogo
+    Logo
   }
 }
 </script>
